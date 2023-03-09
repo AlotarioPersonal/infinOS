@@ -16,7 +16,7 @@ var cursorWidth = 8
 var cursorHeight = 8
 
 var cursor = new Image();
-cursor.src = "../media/cursor.png";
+cursor.src = "cursor.png";
 cursor.x = cursorX;
 cursor.y = cursorY;
 cursor.width = cursorWidth;
