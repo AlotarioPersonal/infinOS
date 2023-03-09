@@ -2,6 +2,11 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
+rightPressed = false;
+leftPressed = false;
+upPressed = false;
+downPressed = false;
+
 taskbarX = 0
 taskbarY = canvas.height - 45
 
