@@ -10,6 +10,13 @@ downPressed = false;
 taskbarX = 0
 taskbarY = canvas.height - 45
 
+cursor = new Image()
+cursor.src = "../media/cursor.png"
+cursor.x = cursorX
+cursor.y = cursorY
+cursor.width = cursorWidth
+cursor.height = cursorHeight
+
 cursorX = 100
 cursorY = 100
 cursorWidth = 8
