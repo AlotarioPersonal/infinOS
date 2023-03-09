@@ -1,4 +1,3 @@
-// INIT
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
@@ -16,7 +15,7 @@ var cursorWidth = 8
 var cursorHeight = 8
 
 var cursor = new Image();
-cursor.src = "cursor.png";
+cursor.src = URL = "cursor.png";
 cursor.x = cursorX;
 cursor.y = cursorY;
 cursor.width = cursorWidth;
@@ -46,4 +45,6 @@ function draw() {
     ctx.drawImage(cursor, cursorX, cursorY);
     requestAnimationFrame(draw);
 }
+
+
 draw();
