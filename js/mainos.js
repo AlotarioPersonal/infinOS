@@ -39,8 +39,10 @@ function draw() {
     ctx.fillRect(taskbarX + 5, taskbarY + 5, 32, 32);
     //ctx.fillStyle = "#FFFFFF"
     //ctx.fillRect(cursorX, cursorY, 8, 8)
-    requestAnimationFrame(draw);
+
+    
     ctx.drawImage(img, cursorX, cursorY);
+    requestAnimationFrame(draw);
 }
 
 draw();
