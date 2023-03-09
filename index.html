@@ -1,5 +1,44 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    This is a placeholder.
-  </head>
+<head>
+    <meta charset="utf-8" />
+    <title>TopSide</title>
+    <style>* { padding: 0; margin: 0; } canvas { background: #e0983e; display: block; margin: 0 auto; } #output { top: 200; text-align: center; } </style>
+    <script src="js/leap-0.6.4.min.js"></script>
+</head>
+<body bgcolor="black">
+
+<canvas id="myCanvas" width="100%" height="100%"></canvas>
+
+
+<script>
+    // INIT
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+   
+    // DRAW
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // KEYBOARD
+        if(rightPressed) {
+            playerX += 3;
+        }
+        else if(leftPressed) {
+            playerX -= 3;
+        }
+        if(downPressed) {
+            playerY += 3;
+        }
+        else if(upPressed) {
+            playerY -= 3;
+        }
+
+    }
+    draw();
+</script>
+
+<div id="output"></div>
+
+</body>
 </html>
