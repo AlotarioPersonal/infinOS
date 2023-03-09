@@ -14,12 +14,12 @@ var cursorY = 100
 var cursorWidth = 8
 var cursorHeight = 8
 
-var cursor = new Image();
-cursor.src = URL = "cursor.png";
-cursor.x = cursorX;
-cursor.y = cursorY;
-cursor.width = cursorWidth;
-cursor.height = cursorHeight;
+var img = new Image();
+img.src = "cursor.png";
+img.x = cursorX;
+img.y = cursorY;
+img.width = cursorWidth;
+img.height = cursorHeight;
 
 
 
