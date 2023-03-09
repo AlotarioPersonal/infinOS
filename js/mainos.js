@@ -15,7 +15,7 @@ var cursorWidth = 8;
 var cursorHeight = 8;
 
 var img = new Image();
-img.src = "cursor.png";
+img.src = "js/cursor.png";
 img.x = cursorX;
 img.y = cursorY;
 img.width = cursorWidth;
