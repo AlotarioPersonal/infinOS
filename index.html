@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>infinOS</title>
     <style>* { padding: 0; margin: 0; } canvas { background: #90959e; display: block; margin: 0 auto; } #output { top: 200; text-align: center; } </style>
-    <script src="js/leap-0.6.4.min.js"></script>
 </head>
 <body bgcolor="black">
 
@@ -15,14 +14,18 @@
     // INIT
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
+
+    taskbarX = 0
+    taskbarY = canvas.height - 35
    
     // DRAW
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        // KEYBOARD
-        
 
+        ctx.fillStyle = "#535d6e";
+        ctx.fillRect(taskbarX, taskbarY, canvas.width, 35);
+
+        requestAnimationFrame(draw)
     }
     draw();
 </script>
