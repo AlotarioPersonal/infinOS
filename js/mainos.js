@@ -112,7 +112,7 @@ function draw() {
     ctx.fillStyle = "#000000";
     ctx.fillRect(taskbarX + 5, taskbarY + 5, 32, 32)
     ctx.fillStyle = "#FFFFFF"
-    ctx.fillRect(cursorX, cursorY, 16, 16)
+    ctx.fillRect(cursorX, cursorY, 8, 8)
 
     // KEYBOARD
     if(rightPressed) {
