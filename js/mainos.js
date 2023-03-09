@@ -43,8 +43,8 @@ function draw() {
     ctx.fillRect(taskbarX, taskbarY, canvas.width, 45);
     ctx.fillStyle = "#000000";
     ctx.fillRect(taskbarX + 5, taskbarY + 5, 32, 32)
-    ctx.fillStyle = "#FFFFFF"
-    ctx.fillRect(cursorX, cursorY, 8, 8)
+    //ctx.fillStyle = "#FFFFFF"
+    //ctx.fillRect(cursorX, cursorY, 8, 8)
 
     
     
