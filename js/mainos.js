@@ -12,14 +12,15 @@ taskbarY = canvas.height - 45
 
 cursorX = 100
 cursorY = 100
+cursorWidth = 8
+cursorHeight = 8
 
 
 
 document.addEventListener("mousemove", mouseMoveHandler);
     function mouseMoveHandler(e) {
-        playerX = e.pageX - canvas.offsetLeft - playerWidth / 2;
-        playerY = e.pageY - canvas.offsetTop - playerHeight / 2;
-        output.innerHTML = "Mouse:  <br />"+ " x: " + playerX + ", y: " + playerY;
+        cursorX = e.pageX - canvas.offsetLeft - cursorWidth / 2;
+        cursorY = e.pageY - canvas.offsetTop - cursorHeight / 2;
     }
 
 
