@@ -40,8 +40,7 @@ function draw() {
     //ctx.fillStyle = "#FFFFFF"
     //ctx.fillRect(cursorX, cursorY, 8, 8)
     requestAnimationFrame(draw);
-    ctx.drawImage(cursor, cursorX, cursorY);
+    ctx.drawImage(img, cursorX, cursorY);
 }
-
 
 draw();
