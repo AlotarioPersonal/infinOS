@@ -48,7 +48,7 @@ function draw() {
 
     
     
-
+    ctx.drawImage(cursor, cursorX, cursorY)
     requestAnimationFrame(draw)
 }
 draw();
