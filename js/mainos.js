@@ -37,13 +37,13 @@ function draw() {
     ctx.fillStyle = "#535d6e";
     ctx.fillRect(taskbarX, taskbarY, canvas.width, 45);
     ctx.fillStyle = "#000000";
-    ctx.fillRect(taskbarX + 5, taskbarY + 5, 32, 32)
+    ctx.fillRect(taskbarX + 5, taskbarY + 5, 32, 32);
     //ctx.fillStyle = "#FFFFFF"
     //ctx.fillRect(cursorX, cursorY, 8, 8)
 
     
     
-    ctx.drawImage(cursor, cursorX, cursorY)
-    requestAnimationFrame(draw)
+    ctx.drawImage(cursor, cursorX, cursorY);
+    requestAnimationFrame(draw);
 }
 draw();
