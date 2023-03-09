@@ -2,17 +2,17 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
 this.x = 0;
-this.y = 0
+this.y = 0;
 this.height = 0;
-this.width = 0
+this.width = 0;
 
-var taskbarX = 0
-var taskbarY = canvas.height - 45
+var taskbarX = 0;
+var taskbarY = canvas.height - 45;
 
-var cursorX = 100
-var cursorY = 100
-var cursorWidth = 8
-var cursorHeight = 8
+var cursorX = 100;
+var cursorY = 100;
+var cursorWidth = 8;
+var cursorHeight = 8;
 
 var img = new Image();
 img.src = "cursor.png";
@@ -40,7 +40,7 @@ function draw() {
     //ctx.fillStyle = "#FFFFFF"
     //ctx.fillRect(cursorX, cursorY, 8, 8)
 
-    
+
     ctx.drawImage(img, cursorX, cursorY);
     requestAnimationFrame(draw);
 }
