@@ -13,7 +13,14 @@ taskbarY = canvas.height - 45
 cursorX = 100
 cursorY = 100
 
-}
+
+
+document.addEventListener("mousemove", mouseMoveHandler);
+    function mouseMoveHandler(e) {
+        playerX = e.pageX - canvas.offsetLeft - playerWidth / 2;
+        playerY = e.pageY - canvas.offsetTop - playerHeight / 2;
+        output.innerHTML = "Mouse:  <br />"+ " x: " + playerX + ", y: " + playerY;
+    }
 
 
 function draw() {
@@ -26,13 +33,7 @@ function draw() {
     ctx.fillStyle = "#FFFFFF"
     ctx.fillRect(cursorX, cursorY, 8, 8)
 
-    // MOUSE
-    document.addEventListener("mousemove", mouseMoveHandler);
-    function mouseMoveHandler(e) {
-        playerX = e.pageX - canvas.offsetLeft - playerWidth / 2;
-        playerY = e.pageY - canvas.offsetTop - playerHeight / 2;
-        output.innerHTML = "Mouse:  <br />"+ " x: " + playerX + ", y: " + playerY;
-    }
+    
     
 
     requestAnimationFrame(draw)
