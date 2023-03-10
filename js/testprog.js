@@ -12,11 +12,11 @@ var cursorWidth = 8
 var cursorHeight = 8
 
 var cursor = new Image();
-cursor.src = "js/cursor.png"
-cursor.x = cursorX
-cursor.y = cursorY
-cursor.width = cursorWidth
-cursor.height = cursorHeight
+cursor.src = "js/cursor.png";
+cursor.x = cursorX;
+cursor.y = cursorY;
+cursor.width = cursorWidth;
+cursor.height = cursorHeight;
 
 canvas.style.background = "#FFFFFF";
 
@@ -34,8 +34,6 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     
     ctx.drawImage(cursor, cursorX, cursorY)
-    ctx.font = "20px Arial"
-    ctx.fillText("The Quick Brown Fox Jumps Over The Lazy Dog")
     
     requestAnimationFrame(draw)
 }
